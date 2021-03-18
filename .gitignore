@@ -130,3 +130,5 @@ dmypy.json
 
 # pytest-becnhmark
 .benchmarks
+
+results/

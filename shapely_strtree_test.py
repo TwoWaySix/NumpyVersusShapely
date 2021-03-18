@@ -21,8 +21,8 @@ def create_random_polygons(n_polygons, n_verts, radius):
         points = []
         for vi in range(n_verts):
             phi = vi * d_angle
-            x = radius*math.cos(phi)
-            y = radius*math.sin(phi)
+            x = radius*math.cos(phi) + centroid[0]
+            y = radius*math.sin(phi) + centroid[1]
             points.append([x, y])
         polygons.append(Polygon(points))
     print(f"\nCreated {n_polygons} Polygons.")
